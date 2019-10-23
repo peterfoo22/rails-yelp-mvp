@@ -1,0 +1,8 @@
+<h1>Reviews</h1>
+
+<% @reviews.each do |element, index| %>
+ <div><%= index %>. <%= element.content %> Rating: <%= element.rating %> </div>
+
+<% end %>
+
+<%= link_to "Back to This Restaurant Page", restaurant_path(@restaurant) %>

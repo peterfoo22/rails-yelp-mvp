@@ -1,0 +1,11 @@
+<ul>
+ <ol>Name: <%= @restaurant.name %></ol>
+ <ol> Address: <%= @restaurant.address %></ol>
+ <ol>Phone Number: <%= @restaurant.phone_number %></ol>
+ <ol>Category: <%= @restaurant.category %></ol>
+</ul>
+
+
+<%= link_to "Show Reviews", restaurant_reviews_path(@restaurant) %>
+<%= link_to "Back to All Restaurants", restaurants_path %>
+
